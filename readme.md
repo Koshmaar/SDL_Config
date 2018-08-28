@@ -17,16 +17,17 @@ C++ library designed for reading and writing configuration files (aka .ini files
 ```
 
 **Features**:
-- sophisticated parsing engine, native support for .INI files from Windows
+
 - reads / writes config files in a cross-platform way
-- SDL_RWops gives you ability to parse config files not only from hard-drive, but also from memory, .zip files, internet streams etc
-- unique .ini file format extensions - key value replacement, storing multiple values in one entry (comma separeted), multiple groups with the same name, many flavours of comments (example follows)
+- sophisticated parsing engine, native support for .INI files from Windows
+- unique extensions to .ini file format - key value replacement, storing multiple values in one entry (comma separeted), multiple groups with the same name, many flavours of comments
 - iteration over groups, over entries and over values of multiple value entries - separately and simultaneously
+- SDL_RWops gives you ability to parse config files not only from hard-drive, but also from memory, .zip files, internet streams etc
 - many ways of customizing library, ie. changing keywords and operators
-- beautiful formatting when saving files: indenting, white spaces, comments that were found during loading, can be easily saved along with normal groups, entries etc. Can be disabled when space is priority. 
-- built with high speed and low memory usage in mind; many ways of customizing library, ie. changing keywords and operators
+- beautiful formatting when saving files: indenting, white spaces, comments that were found during loading, can be easily saved along with normal groups, entries etc. It can be disabled when space is priority. 
+- built with high speed and low memory usage in mind
 - comprehensive, high quality online and offline html documentation
-- mature implementation with autotests, stable interface, proven to work in many projects; already more than *13* years on the market (initialy hosted on Sourceforge https://sourceforge.net/projects/sdl-cfg/, around 9k downloads)
+- mature implementation with autotests, stable interface, proven to work in many projects - already more than *13* years on the market (initialy hosted on Sourceforge https://sourceforge.net/projects/sdl-cfg/, around 9k downloads)
 - full suite of test programs, that show how to use SDL_Config, and of auto test programs, which ensure that library is without bugs
 
 Disadvantages of SDL_Config:
