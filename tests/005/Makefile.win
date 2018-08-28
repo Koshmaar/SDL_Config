@@ -1,0 +1,33 @@
+# Project: 000
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ 6.10.2 on 15-10-07 20:38
+
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = windres.exe
+OBJ       = ../../bin/main.o
+LINKOBJ   = ../../bin/main.o
+LIBS      = -L"E:/Libs/SDL-1.2.11 - mingw/lib" -L"E:/Dev-Cpp/Lib" -lmingw32 ../../bin/SDL_Config.a -lSDLmain  -lSDL   -mwindows 
+INCS      = -I"include"
+CXXINCS   = -I"E:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include" -I"E:/Dev-Cpp/include/c++/3.4.2/backward" -I"E:/Dev-Cpp/include/c++/3.4.2/mingw32" -I"E:/Dev-Cpp/include/c++/3.4.2" -I"E:/Dev-Cpp/include" -I"E:/Dev-Cpp/" -I"E:/Dev-Cpp/include/common/wx/msw" -I"E:/Dev-Cpp/include/common/wx/generic" -I"E:/Dev-Cpp/include/common/wx/fl" -I"E:/Dev-Cpp/include/common/wx/gizmos" -I"E:/Dev-Cpp/include/common/wx/html" -I"E:/Dev-Cpp/include/common/wx/mmedia" -I"E:/Dev-Cpp/include/common/wx/net" -I"E:/Dev-Cpp/include/common/wx/ogl" -I"E:/Dev-Cpp/include/common/wx/plot" -I"E:/Dev-Cpp/include/common/wx/protocol" -I"E:/Dev-Cpp/include/common/wx/stc" -I"E:/Dev-Cpp/include/common/wx/svg" -I"E:/Dev-Cpp/include/common/wx/xml" -I"E:/Dev-Cpp/include/common/wx/xrc" -I"E:/Dev-Cpp/include/common/wx" -I"E:/Dev-Cpp/include/common" -I"E:/Libs/SDL-1.2.11 - mingw/include" -I"E:/Projects/SDL_Config/src"
+RCINCS    = --include-dir "E:/Dev-Cpp/include/common"
+BIN       = ../../bin/test_005.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)   -mwindows
+CFLAGS    = $(INCS) $(DEFINES)   -mwindows
+GPROF     = gprof.exe
+RM        = rm -f
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "..\..\bin\test_005.exe" $(LIBS)
+
+../../bin/main.o: $(GLOBALDEPS) main.cpp
+	$(CPP) -c main.cpp -o ../../bin/main.o $(CXXFLAGS)

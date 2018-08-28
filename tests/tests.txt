@@ -1,0 +1,29 @@
+
+SDL_Config tests:
+
+	001 - educational, basics
+	002 - full auto test of all functions
+
+
+	Iteration over...
+
+		003 - groups
+		004 - entries
+		005 - multi value entries
+
+	006 - all iterations at once
+	
+	007 - SDL_Rwops
+	008 - stress test, profiling
+	009 - C compatibility test
+	010 - CFG_Settings
+	011 - comments
+	012 - C++ interface
+	013 - value substitution
+
+
+
+Generally speaking: 
+
+	test_00X_vs8.vcproj 	files belong to Visual Studio 2003 
+	test_00X.vcproj 	files belong to Visual Studio 2005 
